@@ -1,0 +1,123 @@
+/* Estilo Global */
+body {
+    background-color: #f0f4f8; /* Fundo claro e suave */
+    font-family: 'Arial', sans-serif; /* Fonte moderna */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Wrapper para o Layout */
+#wrapper {
+    display: flex; /* Flexbox para layout responsivo */
+    width: 100%;
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Menu Lateral */
+#sidebar-wrapper {
+    min-width: 250px;
+    background-color: #007bff; /* Azul vibrante para o menu */
+    color: white; /* Texto branco */
+    transition: all 0.3s; /* Transição suave */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Sombra à direita do menu */
+}
+
+.sidebar-heading {
+    font-size: 1.5rem; /* Tamanho do título do menu */
+    padding: 20px; /* Espaçamento do título */
+    text-align: center; /* Centraliza o título */
+    font-weight: bold; /* Negrito para destaque */
+    background-color: #0056b3; /* Cor de fundo do título */
+    border-bottom: 2px solid #004085; /* Borda inferior mais escura */
+}
+
+/* Itens do Menu */
+.list-group-item {
+    color: #080909; /* Cor do texto clara */
+    padding: 15px 20px; /* Espaçamento interno */
+    border: none; /* Remove borda padrão */
+    cursor: pointer; /* Cursor de pointer */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+.list-group-item:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+    color: #080808; /* Texto branco ao passar o mouse */
+}
+
+/* Conteúdo Principal */
+#page-content-wrapper {
+    flex: 1;
+    padding: 30px; /* Espaçamento interno maior */
+    background-color: white; /* Fundo branco */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra no conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 20px; /* Margem externa */
+}
+
+/* Títulos */
+h1 {
+    color: #007bff; /* Cor do título principal em azul vibrante */
+    font-size: 2.5rem; /* Tamanho do título */
+    margin-bottom: 20px; /* Margem abaixo do título */
+}
+
+h2 {
+    color: #050505; /* Cor dos subtítulos em verde */
+    margin-top: 20px; /* Espaçamento acima */
+    font-size: 1.75rem; /* Tamanho dos subtítulos */
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 20px; /* Espaçamento entre os grupos de formulários */
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%; /* Largura total do campo */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ced4da; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border 0.3s; /* Transição na borda */
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border: 2px solid #007bff; /* Borda azul ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #17a2b8; /* Azul-turquesa */
+    border: none; /* Remove borda padrão */
+    padding: 10px 15px; /* Espaçamento do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn-primary:hover {
+    background-color: #138496; /* Cor ao passar o mouse */
+}
+
+/* Alertas */
+.alert {
+    margin-top: 15px; /* Espaçamento superior para alertas */
+    color: #ffffff; /* Texto branco nos alertas */
+    background-color: #dc3545; /* Vermelho para alertas de erro */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        min-width: 200px; /* Largura do menu em telas menores */
+    }
+
+    #page-content-wrapper {
+        margin: 10px; /* Margem menor em telas pequenas */
+        padding: 15px; /* Menos espaçamento interno */
+    }
+
+    h1 {
+        font-size: 2rem; /* Tamanho do título em telas pequenas */
+    }
+}

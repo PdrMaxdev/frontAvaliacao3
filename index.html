@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cadastro de Equipamentos e Colaboradores</title>
+</head>
+<body>
+
+<div class="d-flex" id="wrapper">
+    <!-- Menu Lateral -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Sistema de Cadastro</div>
+        <div class="list-group list-group-flush">
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('equipamento')">Equipamento</a>
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('cadastrarEquipamento')">Cadastrar Equipamento</a>
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('editarEquipamento')">Editar Equipamento</a>
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('colaborador')">Colaborador</a>
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('cadastrarColaborador')">Cadastrar Colaborador</a>
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('relatorios')">Relatórios</a>
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('editarColaborador')">Editar Colaborador</a>
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('controleEPI')">Controle EPI</a>
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('registrarAcao')">Registrar Ação</a>
+            <a href="#!" class="list-group-item list-group-item-action bg-light" onclick="showSection('relatoriosEPI')">Relatórios</a>
+        </div>
+    </div>
+
+    <!-- Conteúdo da Página -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <h1 class="mt-4">Bem-vindo ao Sistema de Cadastro</h1>
+            <div id="main-content">
+                <!-- A seção de conteúdo principal será carregada aqui -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
